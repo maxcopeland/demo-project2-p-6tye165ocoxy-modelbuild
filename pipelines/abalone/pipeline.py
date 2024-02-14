@@ -191,7 +191,7 @@ def get_pipeline(
         py_version="py3",
         instance_type=training_instance_type,
     )
-    xgb_train = Estimator(
+    xgb_train = Estimator( # Pretending to change the estimator
         image_uri=image_uri,
         instance_type=training_instance_type,
         instance_count=1,
